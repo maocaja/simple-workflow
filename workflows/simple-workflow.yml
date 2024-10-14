@@ -1,0 +1,17 @@
+name: Simple Workflow
+
+# El workflow se activará cuando se haga un push en cualquier rama
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # El job se ejecutará en un entorno Ubuntu
+
+    steps:
+      # Step 1: Clonar el repositorio
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Ejecutar un script de shell que imprime un mensaje
+      - name: Run a Hello World script
+        run: echo "Hello, GitHub Actions!"
