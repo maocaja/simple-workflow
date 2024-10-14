@@ -8,9 +8,6 @@ jobs:
     runs-on: ubuntu-latest  # El job se ejecutará en un entorno Ubuntu
 
     steps:
-      # Step 1: Clonar el repositorio
-      - name: Checkout code
-        uses: actions/checkout@v2
 
       # Step 2: Ejecutar un script de shell que imprime un mensaje
       - name: Run a Hello World script
